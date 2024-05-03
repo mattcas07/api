@@ -16,7 +16,7 @@ const visitors = new Set();
 let totalRequests = 0;
 let totalVisitors = 0;
 
-var allowedOrigins = ['https://api.cafirexos.com', 'http://localhost:2027'];
+var allowedOrigins = ['https://api-matt.onrender.com/', 'http://localhost:2027'];
 
 app.set('trust proxy', 1)
 
