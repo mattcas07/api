@@ -20,21 +20,6 @@ var allowedOrigins = ['https://api-matt.onrender.com/', 'http://localhost:2027']
 
 app.set('trust proxy', 1)
 
-// Inicicializar el servidor de correo
-
-if (process.env.new_user_verification === "true") {
-const transporter = nodemailer.createTransport({
-  host: process.env.smtp_host,
-  port: Number(process.env.smtp_port),
-  secure: process.env.smtp_is_secure === 'true',
-  auth: {
-    user: process.env.smtp_user,
-    pass: process.env.smtp_password
-  },
-});
-global.mTransporter = transporter;
-}
-
 
 
 // Funciones
