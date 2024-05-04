@@ -76,8 +76,8 @@ app.get('/status', (req, res) => {
     latencia: `${averageResponseTime} ms`,
     totalRequests: totalRequests,
     totalVisitors: totalVisitors,
-    creator: 'BrunoSobrino',
-    phoneNumber: '+52 1 999 612 5657'
+    creator: 'matt',
+    phoneNumber: '+54'
   };
   const formattedResponse = JSON.stringify(response, null, 2);
   res.setHeader('Content-Type', 'application/json');
