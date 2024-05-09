@@ -71,7 +71,7 @@ async function getMusicBuffer(text) {
       await NodeID3.write(tags, filePath);
       return filePath;
     } else {
-      const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=GataDios&query=${text}`);
+      const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=Gata_Dios&query=${text}`);
       const jsonDL = await resDL.json();
       const linkDL = jsonDL.result[0].link;
       const dlspoty = await downloadTrack(linkDL);
