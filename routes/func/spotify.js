@@ -161,7 +161,7 @@ async function spotifySearch1(input) {
 
 async function spotifySearch2(text) {
   try {
-    const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=GataDios&query=${text}`);
+    const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=Gata_Dios&query=${text}`);
     const jsonDL = await resDL.json();
     return { resultado: jsonDL.result };
   } catch (error) {
@@ -215,7 +215,7 @@ const spotify = new Spotify.default(credentials);*/
 //const dlspoty = await getBuffer(`https://www.guruapi.tech/api/spotifydl?text=${linkDL}`);
 
 /*
-      const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=GataDios&query=${text}`);
+      const resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=Gata_Dios&query=${text}`);
       const jsonDL = await resDL.json();
       const linkDL = jsonDL.result[0].link;
       const spty = await spotifydl(linkDL);
